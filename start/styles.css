@@ -11,6 +11,14 @@ html, body {
 
 /* home page css */
 
+.cursive {
+    font-family: 'Breitkopf Fraktur', cursive;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
 #home-container {
     height: 100%;
     display: grid;
@@ -19,33 +27,71 @@ html, body {
 
 .r1 {
     background-color:black ;
+    background-image: url('img/david.jpg');
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.r1-inner {
+    width: 80%;
+    height: 100%;
+    margin: 0px auto;
 }
 .home-main-nav {
     margin-top: 25px;
 }
-.r1-inner {
-    width: 80%;
-    background-color: green;
-    height: 100%;
-    margin: 0px auto;
-    background-color: green;
+.home-main-nav {
+    padding-top: 25px;
 }
 .home-main-nav > ul {
     list-style-type: none;
 }
 .home-main-nav > ul > li {
     display: inline;
-    font-size: 1.75em;
+    font-size: 1.35em;
+}
+.home-main-nav > ul > li: :first-child {
+    font-family: 'Breitkopf Fraktur', cursive;
 }
 .home-main-nav > ul > li > a {
     color: #fff;
     text-decoration: none;
-    padding: 5px 1em;
-    margin-top: 25px;
+    padding: 15px .5em;
+    font-size: 1.5em;
+}
+.home-main-nav > ul > li:first-child a:hover {
+    background-color: transparent;
+    color: #428bca;
 }
 .home-main-nav > ul > li > a:hover {
     background-color: #fff;
     color: red;
+}
+.gallery-description {
+    padding-top: 15%;
+    padding-bottom: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.r2 {
+    display: grid;
+    padding: 2em 0ex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    justify-items: center;
+    width: 80%;
+    margin: 0px auto;
+    height: 100%;
+}
+.r2 > div {
+    text-align: center;
+}
+.left-align {
+    text-align: left;
 }
 
 /* end home page css */
